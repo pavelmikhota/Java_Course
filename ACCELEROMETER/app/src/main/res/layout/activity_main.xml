@@ -10,116 +10,6 @@
         android:paddingBottom="@dimen/activity_vertical_margin"
         tools:context="com.example.pavelmikhota.accelerometer.MainActivity">
 
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content" android:id="@+id/linearLayout">
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_marginTop="5dp">
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="X: "
-                    android:id="@+id/textView4"/>
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Координаты"
-                    android:id="@+id/textView"
-                    android:layout_above="@+id/button" android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" android:hint="X: "/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:focusable="false" android:layout_marginTop="5dp">
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Y: "
-                    android:id="@+id/textView5"/>
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Координаты"
-                    android:id="@+id/textView2" android:layout_below="@+id/textView" android:layout_alignLeft="@+id/textView"
-                    android:layout_alignStart="@+id/textView" android:singleLine="false"
-                    android:hint="Y:"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_marginTop="5dp">
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Z: "
-                    android:id="@+id/textView6"/>
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Координаты"
-                    android:id="@+id/textView3"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_marginTop="10dp">
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Max Result:"
-                    android:id="@+id/textView8"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" android:layout_marginTop="5dp">
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="X: "
-                    android:id="@+id/textView7"/>
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Координаты"
-                    android:id="@+id/textView9"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" android:layout_marginTop="5dp">
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Y: "
-                    android:id="@+id/textView10"/>
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Координаты"
-                    android:id="@+id/textView11"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" android:layout_marginTop="5dp">
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Z: "
-                    android:id="@+id/textView12"/>
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Координаты"
-                    android:id="@+id/textView13"/>
-        </LinearLayout>
-    </LinearLayout>
     <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -130,9 +20,17 @@
             android:layout_height="50dp"
             android:text="Reset"
             android:id="@+id/button"
-            android:layout_marginLeft="44dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginBottom="54dp"
-            android:layout_alignBottom="@+id/linearLayout" android:layout_toRightOf="@+id/linearLayout"
-            android:layout_toEndOf="@+id/linearLayout"/>
+            android:layout_below="@+id/textView2" android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView" android:layout_marginTop="40dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView2" android:layout_below="@+id/textView" android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
 </RelativeLayout>
