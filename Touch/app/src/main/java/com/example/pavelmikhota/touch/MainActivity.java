@@ -22,12 +22,10 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         result = new TextView(this);
         result.setOnTouchListener(this);
         setContentView(result);
-
     }
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-
 
         x = event.getX();
         y = event.getY();
@@ -49,8 +47,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 break;
         }
         result.setText(down + "\n" + up + "\n" + move);
-        // здесь можем вывести нужные надписи на papa
         return true;
     }
-
 }
